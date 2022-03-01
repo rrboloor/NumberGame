@@ -23,7 +23,7 @@
             <div>
                 <ul class="nav justify-content-end bg-info">
                     <li class="nav-item">
-                        <a href="#Rules" class="nav-link">Rules</a>
+                        <button  type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Rules" >Rules</a>
 
                     </li>
                 </ul>
@@ -48,7 +48,7 @@
         <!-- tobe deleted section -->
         
         <!-- Rules area -->
-<div>
+<!-- <div>
     <ul id="Rules"> Rules
         
 
@@ -57,7 +57,7 @@
         <li>every number you submit will be compared and following will happen</li>
         <li>if position and value any digit match it will give hints how many digits position and value matches</li>
     </ul>
-</div>
+</div> -->
 
 <div id="logarea">
     <p> Your Game logs</p>
@@ -67,6 +67,57 @@
         </ul>
     </p>
 </div>
+
+<!-- Toaster message -->
+
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="startTst" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        
+        <strong class="me-auto">Start Message</strong>
+        <small>just now..</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Game begins ... Enjoy
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Rules Modal... -->
+
+  <!-- Modal -->
+<div class="modal fade" id="Rules" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalRules">Here are the rules.</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div>
+                <ul id="RuleItems"> 
+                              
+                    <li>The Computer thiks one 3 digit Number</li>
+                    <li>You have to guess the number correctly</li>
+                    <li>every number you submit will be compared and following will happen</li>
+                    <li>if position and value any digit match it will give hints how many digits position and value matches</li>
+                </ul>
+            </div>
+
+
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 

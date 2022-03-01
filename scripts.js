@@ -25,6 +25,9 @@ function gameStart() {
     setRandomNumber()
     isGameStarted=true;
     userinput.value='';
+    toastEl = document.getElementById('startTst')
+    bsToast = new bootstrap.Toast(toastEl)
+    bsToast.show()
 }
 
 
